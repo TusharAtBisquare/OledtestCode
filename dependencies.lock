@@ -1,0 +1,28 @@
+dependencies:
+  espressif/esp_lcd_sh1107:
+    component_hash: 9cc00a4d066e3e1d120fd2006d30612766488379b820804092a9bfedb3c1f93c
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.1.0
+  idf:
+    source:
+      type: idf
+    version: 5.5.1
+  lvgl/lvgl:
+    component_hash: 2409fdc84e9766d2a18afd84b051aef3f838348136cdb1c10ac2e8bcdb012bf6
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 9.2.0
+direct_dependencies:
+- espressif/esp_lcd_sh1107
+- lvgl/lvgl
+manifest_hash: 2808c6eea9afc2b3c1f4f26ed9532cc1f5a92d4f6055f70f548db18a21a099cb
+target: esp32c3
+version: 2.0.0
